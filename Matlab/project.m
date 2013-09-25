@@ -1,11 +1,11 @@
-clc;
-clear all;
-close all;
+clc;		|
+clear all;	|For freshening up.
+close all;	|
 
-imgt=imread('cameraman.tif');
-wtr=imread('coins.png');
-wtr1=imresize(wtr,[256 256]);
-img=imgt;
+imgt=imread('cameraman.tif');	|Watermarking Image
+wtr=imread('coins.png');	|Watermark
+wtr1=imresize(wtr,[256 256]);	|Equalizing the sizes 
+img=imgt;	
 wtr=wtr1;
 for i=1:8
     
